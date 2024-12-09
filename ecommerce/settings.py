@@ -35,11 +35,11 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['e-commerce-store-c7jh.onrender.com','*']
+ALLOWED_HOSTS = ['*']
 
 # CSRF_TRUSTED_ORIGINS = ['http://ecommerce-dev.ap-south-1.elasticbeanstalk.com/']
 
-CSRF_TRUSTED_ORIGINS = ['https://e-commerce-store-c7jh.onrender.com']
+# CSRF_TRUSTED_ORIGINS = ['https://e-commerce-store-c7jh.onrender.com']
 
 
 # Application definition
@@ -98,14 +98,14 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -194,7 +194,7 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 
 # RDS (Database) configuration settings:
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -205,6 +205,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
+'''
 
 
